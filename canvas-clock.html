@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Alejandro Perez Martin (AlePerez92)">
+    <meta name="copyright" content="2014">
+    <title>HTML5 Canvas Clock by Alejandro Perez</title>
+    <style>
+        @import url(http://fonts.googleapis.com/css?family=Droid+Serif:700);
+        body {
+            background: #BBB;
+            font-family: 'Droid Serif', serif;
+            text-align: center;
+        }
+        h1 {
+            color: #222;
+            font-size: 3em;
+            text-shadow: 0 1px 0 #DDD;
+        }
+        canvas {
+            display: block;
+            margin: 0 auto;
+        }
+        footer {
+            margin-top: 2em;
+        }
+        footer a {
+            color: #333;
+
+            /* From: http://practice.typekit.com/lesson/using-shades/ */
+            background-image: -webkit-gradient(linear,left top,left bottom,from(transparent),to(#333));
+            background-image: -webkit-linear-gradient(top,transparent 50%,#333 50%);
+            background-image: linear-gradient(to bottom,transparent 50%,#333 50%);
+            background-repeat: repeat-x;
+            -webkit-background-size: 2px 2px;
+            background-size: 2px 2px;
+            background-position: 0 90%;
+            text-shadow: 1px 0 #BBB,2px 0 #BBB,-1px 0 #BBB,-2px 0 #BBB;
+
+            font-size: 1.5em;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HTML5 Canvas Clock</h1>
+    </header>
+
+    <section>
+        <canvas id="clock-canvas" width="500" height="500"></canvas>
+    </section>
+
+    <footer>
+        <a href="https://github.com/AlejandroPerezMartin" title="Author's github">See Alejandro Perez's Github</a>
+    </footer>
+
+    <script src="clock.js"></script>
+</body>
+</html>
